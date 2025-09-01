@@ -9,19 +9,20 @@ namespace Ucu.Poo.Restaurant
     public class Menu
     {
         private List<Dish> dishes = new List<Dish>();
-        void AddDish(Dish dish) {
+
+        public void AddDish(Dish dish)
+        {
             dishes.Add(dish);
         }
 
-        void RemoveDish(Dish dish)
+        public void RemoveDish(Dish dish)
         {
             dishes.Remove(dish);
         }
 
-        Dish GetDishByName(string name)
+        public Dish GetDishByName(string name)
         {
             return dishes.Find(dish => dish.Name == name);
         }
     }
-    
 }
