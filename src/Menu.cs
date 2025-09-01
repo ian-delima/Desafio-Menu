@@ -20,7 +20,7 @@ namespace Ucu.Poo.Restaurant
 
         Dish GetDishByName(string name)
         {
-            return dishes.Find(dish => dish.GetName() == name);
+            return dishes.Find(dish => dish.Name == name);
         }
     }
     
