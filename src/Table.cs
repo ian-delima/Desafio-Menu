@@ -7,18 +7,26 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public class Table
     {
+        private int number;
+        private bool isOccupied;
         public int Number { get ; set; }
         public bool IsOccupied { get; set; }
         private List<Dish> order = new List<Dish>();
 
+        public Table(int number, bool isOccupied)
+        {
+            this.Number = number;
+            this.IsOccupied = isOccupied;
+        }
+
         public void Occupy()
         {
-            IsOccupied = true;
+            this.IsOccupied = true;
         }
 
         public void Free()
         {
-            IsOccupied = false;
+            this.IsOccupied = false;
         }
 
         public void AddToOrder(Dish dish)
