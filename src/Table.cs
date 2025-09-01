@@ -27,6 +27,7 @@ namespace Ucu.Poo.Restaurant
         public void Free()
         {
             this.IsOccupied = false;
+            order.Clear();
         }
 
         public void AddToOrder(Dish dish)
