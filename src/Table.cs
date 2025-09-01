@@ -13,10 +13,9 @@ namespace Ucu.Poo.Restaurant
         public bool IsOccupied { get; set; }
         private List<Dish> order = new List<Dish>();
 
-        public Table(int number, bool isOccupied)
+        public Table(int number)
         {
             this.Number = number;
-            this.IsOccupied = isOccupied;
         }
 
         public void Occupy()
