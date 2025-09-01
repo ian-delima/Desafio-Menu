@@ -21,9 +21,9 @@ namespace Ucu.Poo.Restaurant
             IsOccupied = false;
         }
 
-        public void AddToOrder(Dish)
+        public void AddToOrder(Dish dish)
         {
-            order.Add(Dish);
+            order.Add(dish);
         }
         public bool HasOrders()
         {
